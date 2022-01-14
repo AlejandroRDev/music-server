@@ -7,10 +7,12 @@ const postNewGenre = async (req, res, next) => {
     try {
         const newGenre = new Genre()
         newGenre.name = req.body.name
+        newGenre.description = req.body.description
         newGenre.artist = req.body.artist /* */
         if (req.file) {
             newGenre.img = req.file.path
         }
+        newGenre.instrumentation = req.body.instrumentation
         const genreDB = await newGenre.save()
         return res.status(201).json(genreDB)
     } catch (error) {

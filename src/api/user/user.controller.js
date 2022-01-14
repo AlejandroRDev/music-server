@@ -36,8 +36,9 @@ const loginUser = async (req, res, next) => {
 
 const logoutUser = (req, res, next) => {
     try {
-        const token = null;
-        return res.status(200).json(token)
+        const despedida = 'Bye Bye'
+        const token = (null);
+        return res.status(200).json({token:token, message: despedida})
     } catch (error) {
         return next(error)
     }

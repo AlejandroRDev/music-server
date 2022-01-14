@@ -60,7 +60,7 @@ const patchArtist = async (req, res, next) => {
     if (!artistDb) {
       return next(setError(404, "Artist not found"));
     }
-    if (artistDb.img) deleteFile(artistDb.img);
+   /*  if (artistDb.img) deleteFile(artistDb.img); */
     return res.status(200).json({ new: patchArtist, old: artistDb });
   } catch (error) {
     return next(500, "Artist patch server error");
