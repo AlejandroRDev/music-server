@@ -18,6 +18,7 @@ const postNewArtist = async (req, res, next) => {
     }
     newArtist.nationality= req.body.nationality;
     newArtist.genre= req.body.genre;
+    newArtist.songs = req.body.songs;
     newArtist.instrument= req.body.instrument;
     newArtist.ageOfBirth= req.body.ageOfBirth;
     const artistDb = await newArtist.save();

@@ -9,6 +9,7 @@ const artistSchema = new mongoose.Schema({
     img:{type: String, trim: true},
     nationality:{ type: String},
     genre:{ type: String},
+    songs: {type: String, require: true },
     instrument: { type: String, },
     ageOfBirth: { type:Number }
 })
