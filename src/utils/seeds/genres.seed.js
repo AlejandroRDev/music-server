@@ -5,21 +5,26 @@ const GenresSchema = require("../../api/genre/genre.model");
 
 const Genres = [
   {
-    name: "Rock",
-    description: "Música surgina en EEUU en 1950",
-    artist: ["61e06930bbd4274c6af46d19"],
-    instrumentation: "Vocalist"
+    name: "Música Clásica",
+    description: `La música clásica es la corriente musical que se basa principalmente 
+    en la música producida o basada en las tradiciones de la música litúrgica y secular de Occidente, 
+    principalmente Europa Occidental.`,
+    artist: ["61e16fc93e64f9f16b47479d", "61e170653e64f9f16b4747a0", "61e170ee3e64f9f16b4747a3"],
+    instrumentation: "Violín"
+  },
+  {
+    name: "Blues",
+    description: `El blues (pronunciado [blus], cuyo significado es melancolía o tristeza) es 
+    un género musical vocal e instrumental, basado en la utilización de notas de blues y 
+    de un patrón repetitivo, que suele seguir una estructura de doce compases.`,
+    artist: ["61e1716c3e64f9f16b4747a6", "61e1720d3e64f9f16b4747a9", "61e1727a3e64f9f16b4747ac"],
+    instrumentation: "Guitarra, bajo eléctrico, batería, piano, armónica, saxofón, voz, trombón, trompeta."
   },
   {
     name: "Jazz",
-    description: "Música negra",
-    artist: ["61e08029c8c2a394d63d7f9c"],
-    instrumentation: "Música instrumental"
-  },
-  {
-    name: "Punk",
-    description: "Música basada en la no música",
-    artist: ["61e080c3c8c2a394d63d7fa1"],
+    description: `El jazz es un género musical nacido a finales 
+    del siglo XIX en los Estados Unidos, que se expandió de forma global a lo largo del siglo XX.`,
+    artist: ["61e172f83e64f9f16b4747af", "61e1735e3e64f9f16b4747b2", "61e173bd3e64f9f16b4747b5"],
     instrumentation: "Música instrumental"
   },  
 ];

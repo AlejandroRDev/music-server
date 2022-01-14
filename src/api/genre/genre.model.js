@@ -5,7 +5,7 @@ const GenreSchema = new Schema({
     name: { type: String, required: true },
     description: { type: String, required: false },
     artist: [{ type: Schema.Types.ObjectId, ref: "artists", required: true }],
-    instrumentation: {type: String, required: true}
+    instrumentation: [{type: String, required: true}]
 }, { timestamp: true }
 )
 
