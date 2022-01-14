@@ -10,7 +10,7 @@ const artistSchema = new mongoose.Schema({
     nationality:{ type: String},
     genre:{ type: String},
     songs: [{type: String, require: true }],
-    instrument: { type: String, },
+    instrument: [{ type: String }],
     ageOfBirth: { type:Number }
 })
 
