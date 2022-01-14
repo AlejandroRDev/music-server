@@ -1,0 +1,101 @@
+{
+    "artists": [
+        {
+            "endpoint": "/api/artists/:id",
+            "action": "GET",
+            "response": {
+                "_id": "61e167034d7ca5c30b8c2b68",
+                "songs": [
+                    "Mutilation of the Flesh",
+                    "Butchery of Soul"
+                ],
+                "instrument": [
+                    "Guitarra",
+                    "Bateria",
+                    "Voz",
+                    "Bajo"
+                ],
+                "name": "Severe Torture",
+                "img": "https://res.cloudinary.com/dqvuv1k3a/image/upload/v1642161923/artist-images/fz4ssqpfi6qbvdbjiq3d.jpg",
+                "nationality": "Holanda",
+                "genre": "Death Metal",
+                "ageOfBirth": 1997,
+                "__v": 0
+            }
+        },
+        {            
+        }
+    ],
+    "genres": {
+        "endpoint": "/api/genres/:id",
+        "action": "GET",
+        "response": {
+            "_id": "61e18c791251d5338a58beba",
+            "name": "Música Clásica",
+            "description": "La música clásica es la corriente musical que se basa principalmente en la música producida o basada en las tradiciones de la música litúrgica y secular de Occidente, principalmente Europa Occidental.",
+            "artist": [
+                {
+                    "_id": "61e16fc93e64f9f16b47479d",
+                    "songs": [
+                        "La flauta mágica",
+                        "Las bodas de Fígaro",
+                        "Don Giovanni"
+                    ],
+                    "instrument": [
+                        "Órgano",
+                        "clavicordio",
+                        "clavecín"
+                    ],
+                    "name": "Wolfgang Amadeus Mozart",
+                    "img": "https://res.cloudinary.com/dqvuv1k3a/image/upload/v1642164169/artist-images/o0uoou05yvogyw9lq2qw.jpg",
+                    "nationality": "Alemania",
+                    "genre": "Música Clásica",
+                    "ageOfBirth": 1971,
+                    "__v": 0
+                },
+                {
+                    "_id": "61e170653e64f9f16b4747a0",
+                    "songs": [
+                        "Para Elisa",
+                        "Sinfonía n.º 9",
+                        "Sinfonía n.º 5,"
+                    ],
+                    "instrument": [
+                        "Piano",
+                        "Violín"
+                    ],
+                    "name": "Ludwig van Beethoven",
+                    "img": "https://res.cloudinary.com/dqvuv1k3a/image/upload/v1642164325/artist-images/fmmnlhwzwvavbdktfyn9.jpg",
+                    "nationality": "Alemania",
+                    "genre": "Música Clásica",
+                    "ageOfBirth": 1827,
+                    "__v": 0
+                },
+                {
+                    "_id": "61e170ee3e64f9f16b4747a3",
+                    "songs": [
+                        "Polonesa Op. 53",
+                        "Nocturno",
+                        "Baladas (Chopin)"
+                    ],
+                    "instrument": [
+                        "Piano"
+                    ],
+                    "name": "Frédéric Chopin",
+                    "img": "https://res.cloudinary.com/dqvuv1k3a/image/upload/v1642164462/artist-images/q4tg7ybslqxekwwaz5f3.jpg",
+                    "nationality": "Polonia",
+                    "genre": "Música Clásica",
+                    "ageOfBirth": 1810,
+                    "__v": 0
+                }
+            ],
+            "instrumentation": [
+                "Cuerda frotada",
+                "Viento Madera",
+                "Viento Metal",
+                "Percusión"
+            ],
+            "__v": 0
+        }
+    }
+}

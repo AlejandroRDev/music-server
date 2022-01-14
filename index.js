@@ -8,6 +8,7 @@ const cloudinary = require('cloudinary').v2
 const UserRoutes = require('./src/api/user/user.routes')
 const ArtistRoutes = require('./src/api/artist/artist.routes')
 const GenreRoutes = require('./src/api/genre/genre.routes')
+const documentation = require('./src/utils/Documentation/documentation.json')
 
 // Requerimos el controlador de errores
 const { setError } = require('./src/utils/error/error')
@@ -49,7 +50,7 @@ app.use('/api/users', UserRoutes)
 app.use('/api/artists', ArtistRoutes)
 app.use('/api/genres', GenreRoutes)
 app.use('/', (req, res, next) => {
-    return res.json('MUSIC TRIPLEA SERVER')
+    return res.json(documentation)
 })
 
 app.use('*', (req, res, next) => {
